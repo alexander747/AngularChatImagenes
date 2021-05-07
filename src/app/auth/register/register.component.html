@@ -1,0 +1,25 @@
+<div class="cuerpo">
+<div class="container">
+
+    <form id="signup" autocomplete="off" [formGroup]="formulario" (ngSubmit)="registrarse()">
+        <div class="header">
+            <h3>Registro</h3>
+            <p>Crea tu cuenta</p>
+        </div>
+        
+        <div class="sep"></div>
+        <div class="inputs">
+
+            <input type="text" placeholder="Nombre de usuario" autofocus formControlName="usuario" />
+            <input type="email" placeholder="Correo" formControlName="correo" />
+
+            <input type="password" placeholder="Password" formControlName="password" />
+            <input type="password" placeholder="Repite tu contraseña" formControlName="password2" />
+            <button  id="submit">Registrarse</button>
+
+        </div>
+
+    </form>
+
+</div>
+</div>
