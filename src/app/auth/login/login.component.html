@@ -1,1 +1,21 @@
-<p>login works!</p>
+<div class="cuerpo">
+    <div class="container">
+    
+        <form id="signup" autocomplete="off" [formGroup]="formulario" (ngSubmit)="loguearse()">
+            <div class="header">
+                <h3>Login</h3>
+            </div>
+            
+            <div class="sep"></div>
+            <div class="inputs">
+    
+                <input type="text" placeholder="Nombre de usuario" autofocus formControlName="usuario" />
+                <input type="password" placeholder="Password" formControlName="password" />
+                <button  id="submit">Iniciar sesion</button>
+    
+            </div>
+    
+        </form>
+    
+    </div>
+    </div>
