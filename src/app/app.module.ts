@@ -7,7 +7,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { ChatComponent } from './pages/chat/chat.component';
 
 //FORMULARIOS
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 // RUTAS
 import { AppRoutingModule } from './app-routing.module';
@@ -26,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

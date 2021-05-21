@@ -1,1 +1,38 @@
-<p>chat works!</p>
+
+
+
+<div class="container main-container">
+    <div class="row">
+
+        <div class="col-md-6">
+            <h1>Usuarios</h1>
+            <!-- <app-usuarios (usuarioSeleccionado)="getUsuarioChat( $event )" ></app-usuarios> -->
+          </div>
+
+        <div class="col-md-6">
+          <h1>Chat</h1>
+          <div class="chat-window">
+            <hr>
+     
+            <div class="app-mensajes" id="app-mensajes">
+                <div [ngStyle]="{'text-align':'end'}">
+                    <span class="badge rounded-pill bg-primary">Eder</span>
+                    <p class="text-right">Este es un mensjae</p>
+                </div>
+            
+                <div>
+                    <span class="badge rounded-pill bg-success">Maria</span>
+                    <p>Saludos eder </p>
+                </div>
+               
+            </div>      
+            
+            <input type="text" class="form-control" [(ngModel)]="msj" name="mensaje" (keyup.enter)="enviar()" >
+          </div>
+      </div>
+      
+  
+    </div>
+  
+  </div>
+  
